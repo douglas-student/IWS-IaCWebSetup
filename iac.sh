@@ -10,5 +10,9 @@ echo "Downloading and copying the application files..."
 cd /tmp
 wget https://github.com/douglas-student/linux-do-zero-site-dio/archive/refs/heads/main.zip
 unzip main.zip
-cd linux-site-dio-main
+cd linux-do-zero-site-dio-main
 cp -R * /var/www/html/
+
+service apache2 start
+
+echo "The server is up and running!"
